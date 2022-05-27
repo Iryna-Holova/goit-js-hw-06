@@ -2,7 +2,6 @@ const validationInputEl = document.querySelector('#validation-input');
 const lengthOfInput = Number(validationInputEl.getAttribute('data-length'));
 
 const onInputBlur = (event) => {
-    console.log(event.currentTarget.value.length);
     if (event.currentTarget.value.length === lengthOfInput) {
         validationInputEl.classList.remove('invalid'),
         validationInputEl.classList.add('valid')
